@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: #008080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 3px 2px black;
+}
+
+nav .menu{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+} 
+
+nav .menu a:hover{
+    background-color: rgb(77, 9, 116);
+    transition: 0.5s;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section h3{
+    font-size: 33px;
+    font-weight: 400;
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+section h1{
+    margin: 14px 0 18px 0;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+section p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 45px;
+}
+  
+
+section a{
+    padding: 9px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+section .btn1{
+    background-color: #fff;
+    color: black;
+}
+
+section .btn1:hover{
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+section .btn2{
+    background-color: #00fc13;
+    color: black;
+}
+
+section .btn2:hover {
+    background-color: #b200fc;
+    color: #fff;
+    transition: all 0.3s linear;
+}  
+
+.nameslideshow:after {
+    color: #00fc13;
+    animation: changename 7s infinite linear;
+    content: '';
+}
+  
+
+  @keyframes changename{
+    2% { content: "Portrait"}
+    25% { content: "Landscape"}
+    50% { content: "Editorial"}
+    75% { content: "Event"}
+    100% { content: "Nature"}
+}
+
+
+
+@media only screen and (min-width: 768px) {}
